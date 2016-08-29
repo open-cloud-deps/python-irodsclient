@@ -64,6 +64,7 @@ class Connection(object):
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
         try:
+            s.setsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1)
             s.connect((self.account.host, self.account.port))
         except socket.error:
             raise NetworkException("Could not connect to specified host and port: {host}:{port}".format(
