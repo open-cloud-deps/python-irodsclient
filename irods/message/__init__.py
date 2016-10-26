@@ -19,7 +19,10 @@ def _recv_message_in_len(sock, size):
     while(size_left > 0):
         # set timeout - 90 secs
         sock.settimeout(90)
-        buf = sock.recv(size_left, socket.MSG_WAITALL)
+        try:
+            buf = sock.recv(size_left, socket.MSG_WAITALL)
+        except AttributeError:
+            buf = sock.recv(size_left)
         # unset timeout
         sock.settimeout(None)
         if len(buf) > 0:
