@@ -1,0 +1,5 @@
+python-irodsclient (0.5.1) unstable; urgency=low
+
+  * Initial packaging
+
+ -- Zack Williams <zdw@cs.arizona.edu>  Tue, 25 Oct 2016 17:11:23 -0700

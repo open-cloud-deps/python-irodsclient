@@ -1,0 +1,11 @@
+Format: http://dep.debian.net/deps/dep5
+Upstream-Name: python-irodsclient
+Upstream-Contact: Illyoung Choi <iychoi@email.arizona.edu>
+Source: https://github.com/open-cloud-deps/python-irodsclient
+
+Files:*
+License: BSD-3-clause
+Copyright: 2016 iPlant Collaborative
+
+License: BSD-3-clause
+ Found in `/usr/share/common-licenses/BSD-3-clause`
